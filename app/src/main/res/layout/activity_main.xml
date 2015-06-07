@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_span="3"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/title"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/spotify"
+                style="@style/projects_style"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/btn_spotify"
+                android:onClick="startSpotifyStreamer"/>
+
+            <Button
+                android:id="@+id/scores"
+                style="@style/projects_style"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/btn_scores"
+                android:onClick="startScoresApp"/>
+        </TableRow>
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/library"
+                style="@style/projects_style"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/btn_library"
+                android:onClick="startLibraryApp"/>
+
+            <Button
+                android:id="@+id/buildItBigger"
+                style="@style/projects_style"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/btn_buildItBigger"
+                android:onClick="startBuildItBigger"/>
+        </TableRow>
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/baconReader"
+                style="@style/projects_style"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/btn_baconReader"
+                android:onClick="startBaconReader"/>
+
+            <Button
+                android:id="@+id/capstone"
+                style="@style/capstone_style"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/btn_capstone"
+                android:onClick="startCapstone"/>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
